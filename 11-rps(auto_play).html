@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+        text-align: center;
+        
+        
+      }
+        button {
+          
+            margin:40px;
+            padding: 30px;
+            font-size: 20px;
+            font-weight:bold;
+            border: none;
+            border-radius: 100px;
+        }
+        button:active{
+          border-radius:50px;
+          background-color: rgb(128, 128, 128);
+        }
+        p{
+          font-size: 30px;
+          text-align: center;
+          line-height: 0.2;
+        }
+        div{
+          display: flex;
+          justify-content: center;
+          
+        }
+        .div-2{
+          display: flex;
+          flex-direction:column;
+          column-gap: 20px;
+        }
+        h1{
+        margin-bottom: 50px;
+       
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">ROCK PAPER SCISSORS</h1>
+    <div>
+      <button onclick="playGame('Rock')">Rock</button>
+      <button onclick="playGame('Paper')">Paper</button>
+      <button onclick="playGame('Scissors')">Scissors</button>
+    </div>
+
+    <div class="div-2">
+      <p class="js-result"></p>
+      <p class="js-moves"></p>
+      
+      <p class="js-score">Wins: 0, Losses: 0, Ties: 0</p>
+    </div>
+      
+      <button class="js-reset" onclick="resetScore()">Reset Score</button>
+
+      <button onclick="
+      autoplay();
+      ">Auto Play</button>
+
+      <div></div>
+       <button class="js-clear" onclick="
+        clearr();
+        ">Clear</button>
+   
+
+   
+    <script src="js/11-rps.js"></script>
+</body>
+</html>
